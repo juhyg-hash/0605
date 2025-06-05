@@ -1,18 +1,16 @@
 public class Main {
+    public static void printStudent(String name, int age) {
+        System.out.println("이름 = " + name);
+        System.out.println("나이 = " + age);
+        System.out.println("------------------");
+    }
+
     public static void main(String[] args) {
-        String color = "파랑";
-//
-//        String choiceColor = (color == "빨강") ? "빨강" : (color == "파랑") ? "파랑" : "보라";
-//        //가독성이 떨어짐
-//        System.out.println(choiceColor);
-//
-        if(color == "빨강") {
-            System.out.println("빨강");
-        }else if(color == "파랑") {
-            System.out.println("파랑");
-        }
-            else {
-                System.out.println("보라");
-        }
-    } //삼항 연산자는 중첩해서 사용 x
+        System.out.println("=== 학생 정보 출력 ===");
+        //Main.printStudent--->생략하는 이유는 같은 클래스 안에 있기 때문에
+        printStudent("Alice",20);
+        Main.printStudent("Bob",30);
+        printStudent("Charlie", 32);
+
+    }
 }
